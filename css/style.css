@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Jura:400,700&subset=cyrillic');
 
 body {
     min-width: 1040px;
@@ -32,10 +33,16 @@ header{
     background-position: center;
     background-size: cover;
 }
+.contact-club{
+    padding-top: 30px;
+    background-image: url(/img/pesok.jpg);
+    
+    background-color: rgba(255, 120, 1, 0.72);
+}
 .contact{
     font-size: 12px;
     background: #252525;
-    color: #ccc;
+    color: white;
     
 }
 .contact-left{
@@ -101,6 +108,7 @@ nav{
     color: rgba(239, 228, 228, 0.3);
 }
 
+
             /*header/
 
 /*/
@@ -127,17 +135,20 @@ nav{
     margin-top: 50px;
 }
 caption{
-    padding-bottom: 10px;
+    padding: 20px;
+    padding-bottom: 25px;
 }
 
 .feature-title{
     font-weight: bold;
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 35px;
+    line-height: 35px;
     font-family: "Georgia", serif;
     color: #a38b70;
     text-align: center;
+    
 }
+
 
 .feature-item p{
     font-size: 14px;
@@ -160,8 +171,21 @@ caption{
   /************service/
 
 /*/
+.price{
+    background: #f2f2f2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .price-list-1 tr{
     font-size: 14px;
+   }
+.price-list-1 th{
+    height: 40px;
+    vertical-align: middle;
+}
+.price-list-1 td{
+    height: 30px;
 }
 tr:first-child{
     background: #c4c4c4;
@@ -178,11 +202,12 @@ tr:nth-child(2){
 .price-item tr{
     background: #fff;
     text-align: center;
+   
        }
 .price-item td{
-    height: 15px;
+    height: 20px;
     width: 45px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 15px;
        }
 th,
@@ -190,25 +215,33 @@ td{
     border: 1px solid #917e7e;
     padding: 1px ;
      text-align: center;
+    vertical-align: middle;
 }
+
 
 th{
     width: 50%;
 }
 .price-name{
-    width: 15%;
+    width: 20%;
 }
 .price-cost{
     width: 8%;
 }
 .price-list-2{
-    margin-top: 20px;
+    margin-top: 100px;
+    
     }
+.price-list-2 tr{
+    background:#f2f2f2;
+}
 .text-hint{
     font-size: 14px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     text-align: center;
 }
+
 
 .price-item {
     position: relative;
@@ -226,6 +259,7 @@ th{
     left: -3px;
     width: 244px;
     height: 146px;
+    padding-bottom: 20px;
 }
 
 .price-item:last-child{
@@ -235,7 +269,7 @@ th{
     left: -1px;
     position: absolute;
     width: 244px;
-    margin-top: 10px;
+    margin-top: 20px;
     }
 .table .table-list-2{
     font-weight:;
@@ -261,9 +295,43 @@ th{
 .price-tabl{
     margin-top:250px;
 }
+/**********боковые рамки таблицы с полиграфией****/
+.price-tabl  tr .table-name
+{
+    border-left: 2px double #000;
+}
+.price-tabl .table-cost{
+    border-right: 2px double #000;
+}
+/****разделительная полоса между чб и цветной печатью***/
+table:not(:last-child) tr:nth-child(3) .table-name,
+table:not(:last-child) tr:nth-child(5) .table-type,
+table:not(:last-child) tr:nth-child(6) .table-quantity,
+table:not(:last-child) tr:nth-child(6) .table-cost,
+table:last-child tr:nth-child(7),
+table:last-child tr:nth-child(6) .table-name{
+    border-bottom: 2px solid #000;
+}
+/*****оформление текста в таблице с полиграфией***/
+.price-tabl {
+    line-height: 14px;
+}
+table tr{
+    height: 26px;
+}
+table:last-child tr{
+    height: 22px;
+}
+})
+.price-tabl .table-name,
+.price-tabl .table-cost{
+    font-weight: bold;
+    width:
+    }
+
 .price-tabl td{
     font-size: 14px;
-    
+  
 }
 .price-tabl table{
     position: relative;
@@ -277,24 +345,56 @@ th{
     float: right;
 }
 .price-tabl h3{
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .price-item:last-child,
 .price-table:last-child{
     margin-right: 0;
+}/*******блоконлайн платежа*****/
+.online-payment{
+    padding-top: 50px;
+    padding-bottom: 50px;
+   
+    
 }
+.online-block{
+    padding-top: 30px;
+    margin-left: 285px; 
+}
+/*****контактная инфа***/
 .address{
    position: relative;
     float: left;
     width: 500px;
-    margin-right: 50px;
+    margin-right: 20px;
+    font-family: "Jura", "Open Sans", sans-serif;
+    font-weight: bold;
+    vertical-align:middle;
+    text-align: center;
+    
 }
 .address:last-child{
     margin-right: 0;
 }
-td{
-vertical-align: middle;}
+.address h3{
+    margin-bottom: 20px;
+}
+.address h4{
+    font-size: 24px;
+    font-family: "Jura", "Open Sans", sans-serif;
+    margin: 10px 0 20px;
+}
+.address h6{
+    font-size: 18px;
+    font-family: "Jura", "Open Sans", sans-serif;
+    margin: 10px 0 24px;
+   
+}
+.address a{
+    color: #ff2d26;
+}
+
 
 /***** оформление таблицы общие тарифы по периметру****/
 .price-cost,
@@ -313,4 +413,113 @@ th{
     border-top: 2px double #000;
 }
 
-.
+/*******оформление отзыва*****/
+.feedback{
+    width: 500px;
+    float: right;
+}
+label{
+    padding: 10px;
+   
+}
+input{
+    margin-top: 5px;
+   
+}
+.feedback-tip    {
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0 0;
+}
+
+.feedback-form{
+    margin-bottom:5px;
+}
+.feedback-form input{
+    width: 100%;
+    height: 30px;
+    line-height: 20px;
+    font-size: 20px;
+    font-family: "Arial", sans-serif;
+}
+
+.feedback-form-group   {
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 0;
+    
+}
+.feedback-form-left{
+    float: left;
+    width: 240px;
+    margin-right: 10px;
+   }
+.feedback-form-right{
+    float: left;
+    width: 240px;
+    margin-left: 10px;
+   }
+
+select  {
+    float: right;
+    width: 100%;
+    margin-left: 10px;
+    height: 35px;
+    margin: 10px 0;
+    line-height:15px;
+    font-size: 15px;
+    vertical-align: middle;
+}
+.feedback-form .btn{
+    height: 40px;
+    width: 150px;
+    vertical-align: middle;
+}
+
+
+footer{
+    height: 80px;
+    background: #1a1a1a;
+    padding: 10px;
+    
+}
+.footer-logo{
+    width: 20%;
+    float: left;
+}
+.footer-social{
+    padding-top: 5px;
+}
+.footer-social b{
+    color: rgb(221, 153, 51);
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 20px;
+    font-family: "Georgia", serif;
+}
+footer img {
+    padding-top: 10px;
+    width: 180px;
+    height: 60px;
+}
+
+.btn-social{
+    background-image: url(../img/sprite-logo.png);
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    vertical-align: middle;
+    color: #ffffff;
+    background-repeat: no-repeat;
+    
+}
+.social-btn-vk{
+    background-position: -2px -2px;
+    }
+.social-btn-g{
+    background-position: -80px -2px;
+    }
+.social-btn-you{
+    background-position: -160px -2px;
+    }

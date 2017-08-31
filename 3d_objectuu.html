@@ -3,10 +3,11 @@
 <head>
         <title>3D O-B-J-E-C-T</title>
         <meta charset="utf-8">
-        <meta name="keywords" content="3dobject", "Компьютерный клуб Улан-Удэ", "Компьютерные">
+        <meta name="keywords" content="3dobject, Компьютерный клуб Улан-Удэ, Компьютерные">
         <meta name="description" content="На нашем сайте вы сможете узнать информацию о клубе, ценах на услуги, либо оплатить их онлайн">
         <link href="css/reset.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        
     </head>
 <body>
    <div class="contact">
@@ -35,10 +36,10 @@
            <nav>
                <ul class="main-nav clearfix">
                    <li><a href="#">О клубе</a></li>
-                   <li><a href="#">Услуги</a></li>
-                   <li><a href="#">Прайс-лист</a></li>
+                   <li><a href="#service">Услуги</a></li>
+                   <li><a href="#price">Прайс-лист</a></li>
                    <li><a href="#">Акции</a></li>
-                   <li><a href="#">Он-лайн оплата</a></li>
+                   <li><a href="#online-payment">Он-лайн оплата</a></li>
                </ul>
            </nav>
            </div>
@@ -48,7 +49,7 @@
     </header>
     
     <main>
-    <div class="service">
+    <div id="service" class="service">
        <div class="container">
         <h2 class="section-title">Услуги клуба</h2>
          <ul class="table-one clearfix">
@@ -69,10 +70,10 @@
         </ul>
       </div>
     </div>
-    <div class="price">
+    <div class="price" id="price">
     <div class="container">
      <h2 class="section-title">Прай-лист на услуги</h2>
-     <table class="price-list-1">
+      <table class="price-list-1">
      <caption class="feature-title">Общие тарифы клуба</caption>
                      <tr>
                          <th colspan="3" class="service-name">Компьютеры</th>
@@ -132,8 +133,8 @@
                          
                      </tr>
                      <tr>
-                        <td class="price-name"> Пакет «Личный компьютер на 24 часа» </td>
-                           <td class="price-the-note">Компьютер предоставляется на 24 часа при полной оплате, независимо от времни суток.</td>
+                        <td class="price-name">«Личный компьютер <br>на 24 часа» </td>
+                           <td class="price-the-note">Компьютер на 24, независимо от времни суток.</td>
                          <td class="price-cost"> 450 руб.</td>
                          <td class="price-name"></td>
                            <td class="price-the-note"></td>
@@ -141,9 +142,10 @@
                          
                      </tr>     
                   </table>
-     <div class="price-list-2 clearfix">
+      <div class="price-list-2 clearfix">
         <h3 class="feature-title">Фирменные карты клуба</h3>
         <p class="text-hint"> Специальные предложения для постоянных клиентов</p>
+        <div class=card>
         <div class="price-item">
            <img src="img/redcard.png" alt="Красная карта" >
            <table>
@@ -247,6 +249,7 @@
                 </tr>
             </table>
         </div>
+          </div>
       </div>
       <div class="price-tabl clearfix">
            <h3 class="feature-title">Полиграфические услуги</h3>
@@ -372,6 +375,18 @@
                        <td class="table-quantity"> >20</td>
                        <td class="table-cost"> 18 </td>
                    </tr>
+               <tr>
+                   <td class="table-name"></td>
+                   <td class="table-type">Тип</td>
+                   <td class="table-quantity">Тираж</td>
+                   <td class="table-cost">Цена</td>
+               </tr>
+               <tr>
+                   <td class="table-name"></td>
+                   <td class="table-type">Тип</td>
+                   <td class="table-quantity">Тираж</td>
+                   <td class="table-cost">Цена</td>
+               </tr>
                   
                </table>
            <table class="price-table" >
@@ -412,7 +427,7 @@
                        <td class="table-cost"> 8 </td>
                    </tr>
                    <tr>
-                      <td class="table-name">Набор текста 100 знаков</td>
+                      <td class="table-name">Набор текста</td>
                        <td class="table-quantity"> за 100 знаков </td>
                        <td class="table-cost"> 6  </td>
                    </tr>
@@ -445,91 +460,92 @@
         </div>
   </div>
  </div>
-             <div>
-                 <h2>Он-лайн оплата услуг клуба</h2>
-             </div>
-                <div>
-                 <h2>Популярные игры</h2>
-             </div>
-     <div class="feedback clearfix">
-       <div class="container">
-            <div class="address">
-           <h3>адрес клуба</h3>
-              <hr>
-           <div>
-           <h2>Компьютерный клуб «3D O-B-J-E-C-T»
-</h2>
-   <p>г. Улан-Удэ, Проспект Строителей, дом 72<br>
-
-(отдельный вход с правой стороны здания КСК)<br>
-
-остановка МУП КСК(проезд маршрутками 56, 82)<br>
-
-       +7 902 534-14-76</p>
-
- objectuu@gmail.com
-
-Мы работаем 24 часа в сутки, 7 дней в неделю</div>
-       </div>
-            <div class="address">
-        <h2 class="section-title">Оставляйте отзывы, задавайте вопросы</h2>
-        <p class="feedback-tip">Нам важно знать ваше мнение о работе нашего клуба и уровне обслуживания!</p>
-        <form class="feedback-form" action="/keksby-mail" method="post">
-          <div class="feedback-form-group">
-            <label for="fullname">Представьтесь, пожалуйста:</label>
-            <input type="text" name="fullname" id="fullname">
-          </div>
-          <div class="clearfix">
-            <div class="feedback-form-group feedback-form-group-left-part">
-              <label for="phone">Контактный телефон:</label>
-              <input type="text" name="phone" id="phone">
+        <div class="online-payment" id="online-payment">
+            <div class=container>
+                <h2 class="section-title">Он-лайн оплата услуг</h2>
+            <div class="online-block">
+            <iframe src="https://money.yandex.ru/quickpay/shop-widget?writer=buyer&targets=&targets-hint=%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B%2F%D0%A4%D0%98%D0%9E&default-sum=&button-text=11&payment-type-choice=on&mobile-payment-type-choice=on&hint=&successURL=3dobjectuu.ru&quickpay=shop&account=410013478391702" width="450" height="210" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
             </div>
-            <div class="feedback-form-group feedback-form-group-right-part">
+            </div> 
+        </div>           
+        
+            
+             
+<div class="contact-club clearfix">
+ <div class="container">
+   <div class="address">
+        <h2 class="section-title">Как нас найти</h3>
+        <div>
+         <h4>Компьютерный клуб «3D O-B-J-E-C-T»</h4>
+          <h6>г. Улан-Удэ, Проспект Строителей, дом 72</h6>
+            <h6>(отдельный вход с правой стороны здания КСК)</h6>
+            <h6>Проезд маршрутами 36, 42, 56, 82, 100</h6>
+            <h6>Остановка МУП КСК</h6>
+             <h6>
+              <span class="phone-number">
+                   <p><img src="#" alt="тел" class="phone">+79025341476, 24-14-76</p>
+              </span>
+            </h6>
+            <h6>
+            <span class="email-top">
+                <img src="#" alt="email" class="email">
+        <a href="mailto:objectuu@gmail.com">objectuu@gmail.com</a>
+            </span>
+            </h6>
+            <h6>Мы работаем 24 часа в сутки, 7 дней в неделю</h6>
+            <h6>Не теряйте времени! Приходите к нам =)</h6>
+        </div>
+   </div>
+   <div class="feedback">
+     <h2 class="section-title">Пишите письма</h2>
+       <p class="feedback-tip">Нам важно знать ваше мнение о работе  нашего клуба <br>и уровне обслуживания.</p>
+       <form action="#" class="feedback-form" method="post">
+        <div class="feedback-form-group clearfix">
+            <div class="feedback-form">
+            <label for="fullname">Представьтесь, пожалуйста:</label>
+            <input type="text" id="fullname" id="fullname">
+            </div>
+         
+            <div class="feedback-form feedback-form-left"> 
+              <label for="phone">Контактный телефон:</label>
+              <input type="text" name="lastname" id="phone">
+            </div>
+            <div class="feedback-form feedback-form-right">  
               <label for="email">Электронная почта:</label>
               <input type="text" name="email" id="email">
             </div>
-          </div>
-          <div class="feedback-form-group">
-            <label for="topic">Тема обращения:</label>
-            <select name="topic" id="topic">
-              <option value="1">Оставить отзыв об обслуживании</option>
-              <option value="2">Задать вопрос о товаре</option>
-              <option value="3">Прочие вопросы</option>
-            </select>
-          </div>
-          <div class="feedback-form-group">
-            <label for="message">Текст обращения:</label>
-            <textarea name="message" id="message"></textarea>
-          </div>
-          <input type="submit" class="btn" value="Отправить">
-        </form>
-          
-      </div>
-       </div>
-    </div> 
+         
+          <div class="feedback-form-group clearfix">
+              <label for="topic">Тема сообщения:</label>
+              <select name="topic" id="topic">
+               <option value="Wishes">Пожелание к работе клуба</option>
+               <option value="Feedback">Отзыв об качестве услуги</option>
+               <option value="Other">Прочее</option>
+              </select>
+              <textarea name="comment" id="comment" cols="68" rows="5"></textarea>
+              <input type="submit" class="btn" value="Отправить">
+          </div>  
+        </div>
+         
+     </form>
+   </div>
+  </div>
+ </div> 
+       
          </main>
        <footer>
-           <div class="footer-top">
-               Логотип
+          
+           <div class="container clearfix">
+           <div class="footer-logo">
+               <a href=#><img src="img/3d_logo.png" alt="logo"></a>
            </div>
-
-           <div class="footer-middle">
-               <nav>
-               <ul class="main-nav">
-                   <li><a href=#>УСЛУГИ</a></li>
-                   <li><a href=#>ПРАЙ-ЛИСТ</a></li>
-                   <li><a href=#>ПОПУЛЯРНЫЕ ИГРЫ</a></li>
-                   <li><a href=#>ОН-ЛАЙН ОПЛАТА УСЛУГ</a></li>
-                   <li><a href=#>КОНТАКТЫ КЛУБА</a></li>
-               </ul>
-               </nav>
+           <div class="footer-social">
+               <b>Добавляйтесь в друзья:</b>
+                <a href="https://vk.com/3dobject" class="btn-social social-btn-vk" alt="Вконтакте"></a>
+                <a href="https://plus.google.com/114011186534273967171" class="btn-social social-btn-g" alt="Google+"></a>
+                <a href="https://www.youtube.com/user/uu3Dobject" class="btn-social social-btn-you"></a>
+           </div>            
            </div>
-
-           <div class="footer-bottom"><div class=footer-social>
-            <b>Давайте дружить!</b>
-                <a href="https://vk.com/3dobject" class=social-btn>Вконтакте</a>
-             </div> 
-           </div>  
        </footer>
     </body>
 </html>
